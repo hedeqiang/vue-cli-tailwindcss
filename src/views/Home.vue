@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home h-full flex items-center justify-center">
+    <div class="object-center">
+      <div class="md:flex">
+        <div class="md:flex-shrink-0">
+          <img
+            class="rounded-lg md:w-56"
+            src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+            alt="Woman paying for a purchase"
+          />
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-6">
+          <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
+          <a
+            href="#"
+            class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline"
+          >Finding customers for your new business</a>
+          <p
+            class="mt-2 text-gray-600"
+          >Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "home",
+  components: {}
+};
 </script>
